@@ -66,6 +66,7 @@ select:invalid {
 /* Media Queries  */
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
+
   /* Hero section  */
   body {
     overflow-x: hidden;
@@ -119,7 +120,7 @@ select:invalid {
     display: none;
   }
 
- 
+
   .hero-image {
     width: 100vw;
   }
@@ -163,15 +164,14 @@ select:invalid {
   }
 
   .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.7rem;
     padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .about .leftContainer {
-    width: 100vw;
-    padding: 0 1.2rem;
+  max-width: 100%;  
   }
 
   .about .leftContainer img {
@@ -180,12 +180,11 @@ select:invalid {
   }
 
   .about .rightContainer {
-    width: 100vw;
-    padding: 0 1.2rem;
+    max-width: 100%;
   }
 
   .about .rightContainer h2 {
-    font-size: 3.45rem;
+    font-size: 3.2rem;
     font-weight: 700;
     line-height: 3.5rem;
   }
@@ -214,7 +213,7 @@ select:invalid {
     height: auto;
   }
 
-  .EmpWrapper > div {
+  .EmpWrapper>div {
     height: auto;
 
     padding: 1.3rem;
@@ -319,7 +318,7 @@ select:invalid {
 
   .leftContainer img[alt="play button"] {
     width: 4rem;
-    
+
     height: 4rem;
   }
 
@@ -473,7 +472,7 @@ select:invalid {
     align-items: center;
   }
 
-  .priceCards > div {
+  .priceCards>div {
     width: 100%;
     max-width: 100%;
     padding: 1.5rem;
@@ -728,22 +727,27 @@ select:invalid {
   }
 
   .about {
-    display: flex;
-    flex-direction: row;
-    gap: 12rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     padding: 0 2rem;
   }
 
   .about .leftContainer,
   .about .rightContainer {
-    width: 100vw;
+   
+    max-width: 100%;
     padding: 0 1rem;
   }
 
+  .about .rightContainer{
+    width: 100%
+  }
   .about .leftContainer img {
-    width: 50vw;
+    width: 40vw;
     height: auto;
   }
+  
 
   .about .rightContainer h2 {
     font-size: 3.2rem;
@@ -773,10 +777,10 @@ select:invalid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: auto;
-    
+
   }
 
-  .EmpWrapper > div {
+  .EmpWrapper>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -794,7 +798,7 @@ select:invalid {
     height: auto;
     gap: 4rem;
   }
-  
+
 
   .howWeWork .leftContainer h2 {
     font-size: 3.2rem;
@@ -812,7 +816,7 @@ select:invalid {
     font-size: 1.1rem;
     font-weight: 300;
     line-height: 2.1rem;
-    
+
   }
 
   .howWeWork .rightContainer {
@@ -954,6 +958,7 @@ select:invalid {
     flex-direction: row;
     gap: 1.5rem;
   }
+
   .portfolio .row1,
   .portfolio .row2 {
     display: flex;
@@ -1044,7 +1049,7 @@ select:invalid {
     align-items: flex-start;
   }
 
-  .priceCards > div {
+  .priceCards>div {
     width: 100%;
     max-width: 100%;
     padding: 1.5rem;
